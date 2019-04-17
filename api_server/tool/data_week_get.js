@@ -107,7 +107,7 @@ Module.prototype = {
         return tool._cmd(`git commit -m "date:${tool._date(timestamp)}"`);
       })
       .then(function() {
-        return tool._cmd(`git push -u ${origin} master`)
+        return tool._cmd(`git push -u name master`)
       })
       .then(function() {
         console.log('上传git完成');
