@@ -30,6 +30,6 @@ module.exports = {
   // 获取地址
   data_api: "/api/week/data.do",
 
-  // 本地测试:IP：localhost
+  // 是否是本地测试:  IP==localhost
   loc_dev:true,
 }
