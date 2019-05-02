@@ -5,6 +5,7 @@ GAS 计划的 入口文件
 
 // 启动自动GitHub AS服务
 var GAS_1_data_week_get = require('./GAS_1_data_week_get.js');
+var GAS_2_data_run = require('./GAS_2_data_run.js');
 var GAS_3_cmd = require('./GAS_3_cmd.js');
 
 // 第 1 阶段：获取数据
