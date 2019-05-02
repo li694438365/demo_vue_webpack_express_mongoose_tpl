@@ -24,6 +24,8 @@ Module.prototype = {
 
     var me = this;
 
+
+    console.log(GAS_Data);
     // 初始化
     me._file_init(0, cb);
   },
