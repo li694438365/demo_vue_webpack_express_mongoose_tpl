@@ -92,10 +92,12 @@ Module.prototype = {
 
     // 数据没有超过上限
     if (data.length < GAS_conf.data_max) {
-      data.push({
-        name: GAS_conf.data_tpl.name + "_" + Math.random(),
-        numb: GAS_conf.data_tpl.numb + Math.random(),
-      });
+      var obj = {};
+      for (var key in GAS_conf.data_tpl) {
+        obj[key] = GAS_conf.data_tpl[key] + "_" + Math.random();
+      }
+      data.push(obj);
+      obj = null;
     }
     // 超过数据上限
     else {
