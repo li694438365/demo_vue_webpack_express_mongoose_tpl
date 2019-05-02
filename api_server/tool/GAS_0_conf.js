@@ -9,8 +9,8 @@ module.exports = {
 
   // 要修改数据的格式；
   data_tpl: {
-    name: 'xx',
-    age: 0,
+    t_name: 'xx',
+    t_numb: 0,
   },
 
   // 数据总量的上限
