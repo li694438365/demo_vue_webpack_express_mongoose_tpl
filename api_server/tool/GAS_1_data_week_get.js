@@ -31,17 +31,17 @@ var opt = {
 
 function Module() {
   var me = this;
-
-
 }
 Module.prototype = {
-  init: function() {
+  init: function(cb) {
     var me = this;
 
     // 获取数据
     me._data_get(function() {
       // 数据过滤
       me._data_filter();
+
+      cb&&cb();
     });
   },
   // 获取数据
@@ -95,29 +95,29 @@ Module.prototype = {
     // console.log(Data);
     // return;
 
-    // 获取当前时间戳
-    var timestamp = Date.parse(new Date());
-    // 
-    var path = require('path');
+    // // 获取当前时间戳
+    // var timestamp = Date.parse(new Date());
+    // // 
+    // var path = require('path');
 
-    // 要提交的目录
-    var _url = path.join(__dirname, '../../');
+    // // 要提交的目录
+    // var _url = path.join(__dirname, '../../');
 
     
-    tool
-      ._cmd(`git pull name master`)
-      .then(function() {
-        return tool._cmd(`git add ${_url}`);
-      })
-      .then(function() {
-        return tool._cmd(`git commit -m "date:${tool._date(timestamp)}"`);
-      })
-      .then(function() {
-        return tool._cmd(`git push -u name master`)
-      })
-      .then(function() {
-        console.log('上传git完成');
-      });
+    // tool
+    //   ._cmd(`git pull name master`)
+    //   .then(function() {
+    //     return tool._cmd(`git add ${_url}`);
+    //   })
+    //   .then(function() {
+    //     return tool._cmd(`git commit -m "date:${tool._date(timestamp)}"`);
+    //   })
+    //   .then(function() {
+    //     return tool._cmd(`git push -u name master`)
+    //   })
+    //   .then(function() {
+    //     console.log('上传git完成');
+    //   });
   },
 
 
