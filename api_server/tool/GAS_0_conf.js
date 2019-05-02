@@ -22,5 +22,4 @@ module.exports = {
 
   // 数据更新时间
   data_interval:3600*1000,
-
 }
