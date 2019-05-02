@@ -5,7 +5,11 @@
 module.exports = {
 
   // 要修改文件的地址；
-  src:'',
+  src: '',
 
   // 要修改数据的格式；
+  data_tpl: {
+    name: 'xx',
+    age: 0,
+  }
 }
