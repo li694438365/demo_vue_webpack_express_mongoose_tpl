@@ -14,7 +14,11 @@ function Module() {
   var me = this;
 }
 Module.prototype = {
+	init:function (cb) {
+		/* body... */
 
+		cb&&cb();
+	}
 
 };
 
