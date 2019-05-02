@@ -10,7 +10,7 @@ module.exports = {
   // 要修改数据的格式；
   data_tpl: {
     name: 'xF~in78isx',
-    numb: 0,
+    ps: 0,
   },
 
   // 数据总量的上限
