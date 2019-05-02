@@ -3,3 +3,6 @@
 */
 
 
+// GAS 项目的全局数据
+var Data = require('../../api_server/collection/GAS_data_week.js');
+
