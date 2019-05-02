@@ -1,4 +1,8 @@
 var process = require('child_process');
+/*
+本 文件是用于执行npm run xxx 命令基本函数封装；
+*/
+
 
 function Tool() {}
 Tool.prototype = {

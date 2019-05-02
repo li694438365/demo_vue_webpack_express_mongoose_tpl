@@ -88,7 +88,8 @@ Module.prototype = {
         return;
       }
     });
-
+    // console.log(Data);
+    // return;
 
     // 获取当前时间戳
     var timestamp = Date.parse(new Date());
@@ -98,7 +99,7 @@ Module.prototype = {
     // 要提交的目录
     var _url = path.join(__dirname, '../../');
 
-    // console.log(Data);
+    
     tool
       ._cmd(`git pull name master`)
       .then(function() {
@@ -114,6 +115,8 @@ Module.prototype = {
         console.log('上传git完成');
       });
   },
+
+  
 
 
 

@@ -1,3 +1,6 @@
+/*
+本 cmd 文件是执行npm run xxx 命令的；
+*/
 var conf = require('./conf.js');
 var path = require('path');
 var Tool = require('./tool.js');
