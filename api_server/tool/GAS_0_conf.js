@@ -11,5 +11,11 @@ module.exports = {
   data_tpl: {
     name: 'xx',
     age: 0,
-  }
+  },
+
+  // 数据总量的上限
+  data_max:100,
+
+  // 超出上限时，缩减为
+  data_min:10,
 }
