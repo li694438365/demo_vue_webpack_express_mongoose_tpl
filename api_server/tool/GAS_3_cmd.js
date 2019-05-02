@@ -14,7 +14,7 @@ Module.prototype = {
   init: function() {
     var me = this;
 
-    // 获取数据
+    // 提交数据
     me._data_push(function() {
     });
   },
