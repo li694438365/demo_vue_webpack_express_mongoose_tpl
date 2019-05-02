@@ -8,7 +8,7 @@ var http = require("http");
 var conf = require('../../conf.js');
 
 // 全局数据
-var Data = require('../../api_server/collection/data_week.js');
+var Data = require('../../api_server/collection/GAS_data_week.js');
 
 // 公共数据
 var FN = require('./common.js');
