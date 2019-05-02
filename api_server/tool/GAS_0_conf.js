@@ -9,7 +9,7 @@ module.exports = {
 
   // 要修改数据的格式；
   data_tpl: {
-    name: 'xF~in78isx',
+    info: 'xF~in78isx',
     ps: 0,
   },
 
