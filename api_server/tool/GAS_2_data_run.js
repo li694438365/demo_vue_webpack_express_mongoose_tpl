@@ -23,8 +23,7 @@ Module.prototype = {
   init: function(cb) {
 
     var me = this;
-
-
+    
     // 今天存在
     if (GAS_Data._github) {
       // 初始化
