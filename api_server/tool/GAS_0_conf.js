@@ -18,4 +18,5 @@ module.exports = {
 
   // 超出上限时，缩减为
   data_min:10,
+
 }
