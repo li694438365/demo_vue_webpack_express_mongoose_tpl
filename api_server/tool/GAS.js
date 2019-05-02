@@ -2,8 +2,8 @@
 GAS 计划的 入口文件
 */
 
-// 启动自动GitHub AS服务
 
+// 启动自动GitHub AS服务
 var GAS_1_data_week_get = require('./GAS_1_data_week_get.js');
 var GAS_3_cmd = require('./GAS_3_cmd.js');
 
