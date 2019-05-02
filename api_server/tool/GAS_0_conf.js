@@ -19,4 +19,8 @@ module.exports = {
   // 超出上限时，缩减为
   data_min:10,
 
+
+  // 数据更新时间
+  data_interval:3600*1000,
+
 }
