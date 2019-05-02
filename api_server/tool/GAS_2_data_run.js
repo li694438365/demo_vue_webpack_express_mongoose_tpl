@@ -46,7 +46,7 @@ Module.prototype = {
         return me._file_save(data);
       })
       .then(function(res) {
-        console.log(res);
+        // console.log(res);
         index++;
         me._file_init(index, cb);
       });
@@ -77,7 +77,7 @@ Module.prototype = {
     if (data.length < GAS_conf.data_max) {
       data.push({
         name: GAS_conf.data_tpl.name + "_" + Math.random(),
-        age: GAS_conf.data_tpl.age + Math.random(),
+        numb: GAS_conf.data_tpl.numb + Math.random(),
       });
     }
     // 超过数据上限
