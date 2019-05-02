@@ -19,6 +19,7 @@ var Tool = require('../../tool.js');
 var tool = new Tool();
 
 
+// 请求的一些参数
 var opt = {
   host: (conf.loc_dev ? 'localhost' : conf.ip),
   port: conf.data_port,
