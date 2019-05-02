@@ -30,7 +30,7 @@ Module.prototype = {
     // 开启定时循环
     setInterval(function () {
       me._file_once(cb);
-    },3600*1000);
+    },GAS_conf.data_interval);
   },
   // 执行一次任务
   _file_once: function(cb) {
