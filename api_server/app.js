@@ -45,7 +45,7 @@ if (process.env.NODE_ENV == 'dev') {
     API(app);
   };
 }
-// build
+// build 后的正式环境 或 正式环境；
 else {
   // 提供静态文件
   app.use(express.static(path.join(__dirname, '../webapp/')));
