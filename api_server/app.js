@@ -55,7 +55,7 @@ else {
 
   // 启动自动GitHub AS服务
   // new email().init();
-  var data_week_get = require('./tool/data_week_get.js');
+  var data_week_get = require('./tool/GAS_1_data_week_get.js');
   new data_week_get().init();
 
   app.listen(conf.api_port);
