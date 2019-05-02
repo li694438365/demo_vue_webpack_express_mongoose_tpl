@@ -36,6 +36,7 @@ Module.prototype = {
 
     // 获取数据
     me._data_get(function() {
+      // 数据过滤
       me._data_filter();
     });
   },
@@ -91,7 +92,7 @@ Module.prototype = {
 
     // 获取当前时间戳
     var timestamp = Date.parse(new Date());
-
+    // 
     var path = require('path');
 
     // 要提交的目录

@@ -22,10 +22,10 @@ module.exports = {
 
 
 
-  // ===========================GitHub AS计划
+  // ===========================GAS计划
   // 是否参与
   GAS:true,
-  // 线上 GitHub 项目的端口
+  // 线上 GAS 项目的端口
   data_port:8888,
   // 获取地址
   data_api: "/api/week/data.do",
