@@ -4,7 +4,7 @@
 
 var http = require("http");
 
-// 配置项
+// 全局 配置项
 var conf = require('../../conf.js');
 
 // GAS 项目的全局数据
@@ -12,7 +12,6 @@ var Data = require('../../api_server/collection/GAS_data_week.js');
 
 // 公共 函数
 var FN = require('./common.js');
-
 
 
 // 请求的一些参数
