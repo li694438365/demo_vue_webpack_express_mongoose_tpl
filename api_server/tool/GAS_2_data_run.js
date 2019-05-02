@@ -24,23 +24,12 @@ Module.prototype = {
 
     var me = this;
 
-    // 执行一次任务
-    me._file_once(cb);
 
-    // 开启定时循环
-    setInterval(function () {
-      me._file_once(cb);
-    },GAS_conf.data_interval);
-  },
-  // 执行一次任务
-  _file_once: function(cb) {
-    var me = this;
     // 今天存在
     if (GAS_Data._github) {
       // 初始化
       me._file_init(0, cb);
     }
-
   },
 
 
