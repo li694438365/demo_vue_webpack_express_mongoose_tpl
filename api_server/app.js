@@ -53,10 +53,10 @@ else {
   // 提供api服务
   API(app);
 
-  // 启动自动GitHub AS服务
-  // new email().init();
-  var data_week_get = require('./tool/GAS_1_data_week_get.js');
-  new data_week_get().init();
+
+  // 启动GAS服务
+  require('./tool/GAS.js');
+  
 
   app.listen(conf.api_port);
   console.log('build app服务 ' + conf.api_port);
