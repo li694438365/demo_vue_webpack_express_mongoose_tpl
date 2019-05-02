@@ -10,13 +10,9 @@ var conf = require('../../conf.js');
 // GAS 项目的全局数据
 var Data = require('../../api_server/collection/GAS_data_week.js');
 
-// 公共数据
+// 公共 函数
 var FN = require('./common.js');
 
-
-// 全局工具
-var Tool = require('../../tool.js');
-var tool = new Tool();
 
 
 // 请求的一些参数
