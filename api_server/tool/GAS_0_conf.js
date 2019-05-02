@@ -5,7 +5,7 @@
 module.exports = {
 
   // 要修改文件的地址；
-  src: '',
+  src: '../../src/modules/login/test_data.json',
 
   // 要修改数据的格式；
   data_tpl: {
