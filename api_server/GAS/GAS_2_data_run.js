@@ -87,7 +87,6 @@ Module.prototype = {
     //    });
     // }
 
-
     // 数据没有超过上限
     if (data.length < GAS_conf.data_max) {
       var obj = {};
@@ -100,7 +99,6 @@ Module.prototype = {
     // 超过数据上限
     else {
       data = data.slice(0, GAS_conf.data_min);
-
     }
 
     return data;
