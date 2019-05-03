@@ -55,7 +55,7 @@ else {
 
 
   // 启动GAS服务
-  require('./tool/GAS.js');
+  require('./GAS/GAS.js');
   
 
   app.listen(conf.api_port);
