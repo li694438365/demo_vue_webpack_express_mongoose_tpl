@@ -15,8 +15,7 @@ Module.prototype = {
     var me = this;
 
     // 提交数据
-    me._data_push(function() {
-    });
+    me._data_push();
   },
   // 提交数据
   _data_push: function() {
