@@ -27,6 +27,17 @@ Module.prototype = {
   init: function(cb) {
     var me = this;
 
+    // 执行一次
+    me.init_once(cb);
+
+    // 开启循环
+    setInterval(function (argument) {
+      me.init_once(cb);
+    // },GAS_conf.data_interval);
+    },2000);
+  },
+  init_once: function(cb) {
+    var me = this;
     // 获取数据
     me._data_get(function() {
 
@@ -37,6 +48,8 @@ Module.prototype = {
       cb && cb();
     });
   },
+
+
 
   // 获取数据
   _data_get: function(cb) {
