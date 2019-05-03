@@ -11,7 +11,7 @@ module.exports = {
   // 获取地址
   data_api: "/api/week/data.do",
 
-  // 是否是本地测试:IP==localhost，上限后需改为false
+  // 是否是 本地测试:IP==localhost，上限后需改为false
   loc_dev: true,
 
 
