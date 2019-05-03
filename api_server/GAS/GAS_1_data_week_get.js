@@ -25,13 +25,17 @@ Module.prototype = {
   init: function(cb) {
     var me = this;
 
-    // 执行一次
-    me.init_once(cb);
-
-    // 开启 24 小时 循环
-    setInterval(function(argument) {
+    // 是否参与GAS计划；
+    if (GAS_conf.GAS) {
+      // 执行一次
       me.init_once(cb);
-    }, GAS_conf.data_interval);
+
+      // 开启 24 小时 循环
+      setInterval(function(argument) {
+        me.init_once(cb);
+      }, GAS_conf.data_interval);
+    }
+
   },
   init_once: function(cb) {
     var me = this;
