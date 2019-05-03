@@ -147,9 +147,6 @@ Module.prototype = {
         console.log('******************上传git完成*******************');
         console.log('\t');
         console.log('\t');
-        console.log('\t');
-        console.log('\t');
-        console.log('\t');
 
         cb && cb();
       });
