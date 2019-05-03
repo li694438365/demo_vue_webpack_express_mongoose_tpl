@@ -9,6 +9,7 @@ var conf = require('../../conf.js');
 
 // GAS 项目的全局数据
 var Data = require('../../api_server/collection/GAS_data_week.js');
+var GAS_conf = require('./GAS_0_conf.js');
 
 // 公共 函数
 var FN = require('./common.js');
@@ -34,6 +35,7 @@ Module.prototype = {
 
     // 获取数据
     me._data_get(function() {
+      
       // 数据过滤
       me._data_filter();
 
@@ -41,9 +43,11 @@ Module.prototype = {
       cb&&cb();
     });
   },
+
   // 获取数据
   _data_get: function(cb) {
     var me = this;
+
     // 
     var req = http
       .request(opt, function(res) {
