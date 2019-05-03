@@ -31,10 +31,9 @@ Module.prototype = {
     me.init_once(cb);
 
     // 开启循环
-    setInterval(function (argument) {
+    setInterval(function(argument) {
       me.init_once(cb);
-    // },GAS_conf.data_interval);
-    },2000);
+    }, GAS_conf.data_interval);
   },
   init_once: function(cb) {
     var me = this;
