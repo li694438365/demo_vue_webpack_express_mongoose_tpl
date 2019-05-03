@@ -99,7 +99,6 @@ Module.prototype = {
     }
     // 超过数据上限
     else {
-      console.log(1);
       data = data.slice(0, GAS_conf.data_min);
 
     }
@@ -109,7 +108,6 @@ Module.prototype = {
   // 文件输出
   _file_save: function(data) {
     var me = this;
-    console.log(data.length);
     return new Promise(function(resolve, reject) {
       fs.outputJson(path.join(__dirname, GAS_conf.src), data)
         .then(function(res) {
