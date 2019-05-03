@@ -144,7 +144,12 @@ Module.prototype = {
         return tool._cmd(`git push -u ${_name} master`)
       })
       .then(function() {
-        console.log('上传git完成');
+        console.log('******************上传git完成*******************');
+        console.log('\t');
+        console.log('\t');
+        console.log('\t');
+        console.log('\t');
+        console.log('\t');
 
         cb && cb();
       });
