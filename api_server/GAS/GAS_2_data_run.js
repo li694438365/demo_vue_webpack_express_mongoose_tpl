@@ -46,7 +46,6 @@ Module.prototype = {
     // 读取文件
     me._file_read()
       .then(function(data) {
-        console.log(data.length);
         // 改变文件
         me._file_upd(data);
 
@@ -102,9 +101,10 @@ Module.prototype = {
     else {
       console.log(1);
       data = data.slice(0, GAS_conf.data_min);
+
     }
 
-    // console.log(data);
+    console.log(data.length);
   },
   // 文件输出
   _file_save: function(data) {
