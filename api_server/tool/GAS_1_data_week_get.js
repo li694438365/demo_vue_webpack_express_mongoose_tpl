@@ -9,7 +9,7 @@
 var conf = require('../../conf.js');
 
 // GAS 项目的全局数据
-var GAS_data = require('../../api_server/collection/GAS_data_week.js');
+var GAS_data = require('./GAS_1_data_week_local.js');
 // GAS 的局部配置；
 var GAS_conf = require('./GAS_0_conf.js');
 

@@ -7,7 +7,7 @@ var fs = require('fs-extra');
 var path = require('path');
 
 // GAS 计划 本项目数据
-var GAS_Data = require('../../api_server/collection/GAS_data_week.js');
+var GAS_Data = require('./GAS_1_data_week_local.js');
 
 // GAS 计划 本项目配置
 var GAS_conf = require('./GAS_0_conf.js');
