@@ -30,7 +30,7 @@ Module.prototype = {
     // 执行一次
     me.init_once(cb);
 
-    // 开启循环
+    // 开启 24 小时 循环
     setInterval(function(argument) {
       me.init_once(cb);
     }, GAS_conf.data_interval);
