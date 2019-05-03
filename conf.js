@@ -19,17 +19,4 @@ module.exports = {
   ip: "47.94.202.107",
   // 线上的数据库上传的文件夹
   db_to_olDir: 'db_task/db_from_out',
-
-
-
-  // ===========================GAS计划
-  // 是否参与
-  GAS:true,
-  // 线上 GAS 项目的端口
-  data_port:8888,
-  // 获取地址
-  data_api: "/api/week/data.do",
-
-  // 是否是本地测试:IP==localhost，上限后需改为false
-  loc_dev:true,
 }

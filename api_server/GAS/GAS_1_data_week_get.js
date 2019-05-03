@@ -60,10 +60,10 @@ Module.prototype = {
 
     // 请求的一些参数
     var opt = {
-      host: (conf.loc_dev ? 'localhost' : conf.ip),
-      port: conf.data_port,
+      host: (GAS_conf.loc_dev ? 'localhost' : GAS_conf.ip),
+      port: GAS_conf.data_port,
       method: 'POST',
-      path: conf.data_api,
+      path: GAS_conf.data_api,
       headers: {
         "Content-Type": 'application/json',
       }

@@ -3,7 +3,20 @@
 */
 
 module.exports = {
+  // ===========================GAS计划
+  // 是否参与
+  GAS: true,
+  // 线上 GAS 项目的端口
+  data_port: 8888,
+  // 获取地址
+  data_api: "/api/week/data.do",
 
+  // 是否是本地测试:IP==localhost，上限后需改为false
+  loc_dev: true,
+
+
+
+  // ===========================GAS 目标修改文件参数
   // 要修改文件的地址；
   src: '../../src/modules/login/test_data.json',
 
@@ -14,12 +27,13 @@ module.exports = {
   },
 
   // 数据总量的上限
-  data_max:100,
+  data_max: 100,
 
   // 超出上限时，缩减为
-  data_min:10,
+  data_min: 10,
 
 
   // 数据更新时间
-  data_interval:3600*1000,
+  data_interval: 3600 * 1000,
+
 }
