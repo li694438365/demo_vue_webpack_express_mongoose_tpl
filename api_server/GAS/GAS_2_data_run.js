@@ -47,7 +47,7 @@ Module.prototype = {
     me._file_read()
       .then(function(data) {
         // 改变文件
-        me._file_upd(data);
+        data = me._file_upd(data);
 
         // 保存文件
         return me._file_save(data);
@@ -104,7 +104,7 @@ Module.prototype = {
 
     }
 
-    console.log(data.length);
+    return data;
   },
   // 文件输出
   _file_save: function(data) {
