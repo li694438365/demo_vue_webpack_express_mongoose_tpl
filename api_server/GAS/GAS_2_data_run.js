@@ -46,7 +46,7 @@ Module.prototype = {
     // 读取文件
     me._file_read()
       .then(function(data) {
-
+        console.log(data.length);
         // 改变文件
         me._file_upd(data);
 
