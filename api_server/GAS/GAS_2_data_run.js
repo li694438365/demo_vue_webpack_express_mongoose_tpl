@@ -104,7 +104,7 @@ Module.prototype = {
 
     }
 
-    
+    console.log(data.length);
   },
   // 文件输出
   _file_save: function(data) {
