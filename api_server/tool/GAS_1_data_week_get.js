@@ -41,7 +41,7 @@ Module.prototype = {
   // 获取数据
   _data_get: function(cb) {
     var me = this;
-    
+
     // 用于做请求
     var http = require("http");
 
@@ -75,6 +75,8 @@ Module.prototype = {
           var data_obj = JSON.parse(data_str);
           // 全局赋值
           Data.week = JSON.parse(data_obj.week);
+
+          opt = null;
 
           // 
           cb && cb();
