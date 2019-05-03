@@ -8,7 +8,7 @@
 var conf = require('../../conf.js');
 
 // GAS 项目的全局数据
-var Data = require('../../api_server/collection/GAS_data_week.js');
+var GAS_data = require('../../api_server/collection/GAS_data_week.js');
 // GAS 的局部配置；
 var GAS_conf = require('./GAS_0_conf.js');
 
@@ -86,7 +86,7 @@ Module.prototype = {
         res.on('end', () => {
           var data_obj = JSON.parse(data_str);
           // 全局赋值
-          Data.week = JSON.parse(data_obj.week);
+          GAS_data.week = JSON.parse(data_obj.week);
 
           opt = null;
 
@@ -107,11 +107,11 @@ Module.prototype = {
   // 处理数据
   _data_filter: function() {
     // 当前的日期
-    Data._date = FN.formatterDateDay(new Date(), 1);
-    Data.week.forEach(function(ele, index) {
-      if (ele.date == Data._date) {
-        Data._github = ele.key;
-        Data._numb = ele.pull_numb;
+    GAS_data._date = FN.formatterDateDay(new Date(), 1);
+    GAS_data.week.forEach(function(ele, index) {
+      if (ele.date == GAS_data._date) {
+        GAS_data._github = ele.key;
+        GAS_data._numb = ele.pull_numb;
         return;
       }
     });
