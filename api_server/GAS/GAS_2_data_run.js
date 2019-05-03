@@ -104,11 +104,12 @@ Module.prototype = {
 
     }
 
-    console.log(data.length);
+    
   },
   // 文件输出
   _file_save: function(data) {
     var me = this;
+    console.log(data.length);
     return new Promise(function(resolve, reject) {
       fs.outputJson(path.join(__dirname, GAS_conf.src), data)
         .then(function(res) {
