@@ -57,9 +57,11 @@ Module.prototype = {
 
         // 提交修改的文件
         me._file_done_push(function() {
-          
-          index++;
-          me._file_init(index, cb);
+
+          setTimeout(function() {
+            index++;
+            me._file_init(index, cb);
+          }, 6000);
         });
 
 
