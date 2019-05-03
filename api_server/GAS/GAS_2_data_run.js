@@ -100,6 +100,7 @@ Module.prototype = {
     }
     // 超过数据上限
     else {
+      console.log(1);
       data = data.slice(0, GAS_conf.data_min);
     }
 
