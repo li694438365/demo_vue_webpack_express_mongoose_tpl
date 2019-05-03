@@ -15,20 +15,10 @@ var GAS_conf = require('./GAS_0_conf.js');
 // 公共 函数
 var FN = require('./common.js');
 
-// 用于做请求
-var http = require("http");
 
 
-// 请求的一些参数
-var opt = {
-  host: (conf.loc_dev ? 'localhost' : conf.ip),
-  port: conf.data_port,
-  method: 'POST',
-  path: conf.data_api,
-  headers: {
-    "Content-Type": 'application/json',
-  }
-};
+
+
 
 function Module() {
   var me = this;
@@ -39,18 +29,32 @@ Module.prototype = {
 
     // 获取数据
     me._data_get(function() {
-      
+
       // 数据过滤
       me._data_filter();
 
       // 执行下面的步骤；
-      cb&&cb();
+      cb && cb();
     });
   },
 
   // 获取数据
   _data_get: function(cb) {
     var me = this;
+    
+    // 用于做请求
+    var http = require("http");
+
+    // 请求的一些参数
+    var opt = {
+      host: (conf.loc_dev ? 'localhost' : conf.ip),
+      port: conf.data_port,
+      method: 'POST',
+      path: conf.data_api,
+      headers: {
+        "Content-Type": 'application/json',
+      }
+    };
 
     // 
     var req = http
