@@ -18,7 +18,7 @@ Module.prototype = {
     me._data_push();
   },
   // 提交数据
-  _data_push: function() {
+  _data_push: function(cb) {
 
 
     // 获取当前时间戳
@@ -45,6 +45,8 @@ Module.prototype = {
       })
       .then(function() {
         console.log('上传git完成');
+
+        cb&&cb();
       });
   },
 
