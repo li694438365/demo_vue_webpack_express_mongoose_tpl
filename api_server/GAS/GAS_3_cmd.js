@@ -1,7 +1,7 @@
 /*
 3.该文件用于 用于操作完成后进行GitHub提交；
 */
-
+var GAS_conf = require('./GAS_0_conf.js');
 
 // 全局工具
 var Tool = require('../../tool.js');
@@ -29,9 +29,11 @@ Module.prototype = {
     // 要提交的目录
     var _url = path.join(__dirname, '../../');
 
+
+    var _name = GAS_conf.loc_dev ? 'name' :'origin';
     
     tool
-      ._cmd(`git pull name master`)
+      ._cmd(`git pull ${_name} master`)
       .then(function() {
         return tool._cmd(`git add ${_url}`);
       })
@@ -39,7 +41,7 @@ Module.prototype = {
         return tool._cmd(`git commit -m "date:${tool._date(timestamp)}"`);
       })
       .then(function() {
-        return tool._cmd(`git push -u name master`)
+        return tool._cmd(`git push -u ${_name} master`)
       })
       .then(function() {
         console.log('上传git完成');
