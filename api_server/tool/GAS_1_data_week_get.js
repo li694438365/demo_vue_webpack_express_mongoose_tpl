@@ -2,17 +2,21 @@
 1.该文件用于 获取GAS 项目的 大周期数据，以计算出自己的当日的数据；
 */
 
-var http = require("http");
+
 
 // 全局 配置项
 var conf = require('../../conf.js');
 
 // GAS 项目的全局数据
 var Data = require('../../api_server/collection/GAS_data_week.js');
+// GAS 的局部配置；
 var GAS_conf = require('./GAS_0_conf.js');
 
 // 公共 函数
 var FN = require('./common.js');
+
+// 用于做请求
+var http = require("http");
 
 
 // 请求的一些参数
