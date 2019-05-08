@@ -110,6 +110,7 @@ Module.prototype = {
       if (ele.date == GAS_data._date) {
         GAS_data._github = ele.key;
         GAS_data._numb = ele.pull_numb;
+        console.log(GAS_data);
         return;
       }
     });
