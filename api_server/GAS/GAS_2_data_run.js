@@ -41,6 +41,7 @@ Module.prototype = {
     // 次数 等于 今日次数 递归结束,同时执行回调
     if (index == GAS_Data._numb) {
       cb && cb();
+      console.log(cb);
       return;
     }
     // 读取文件
