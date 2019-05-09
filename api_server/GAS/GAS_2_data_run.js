@@ -23,25 +23,25 @@ function Module() {
   var me = this;
 }
 Module.prototype = {
-  init: function(cb) {
+  init: function() {
 
     var me = this;
 
     // 今天存在
     if (GAS_Data._github) {
       // 初始化
-      me._file_init(0, cb);
+      me._file_init(0);
     }
   },
 
   // ==============================================文件修改
   // 文件的初始化工作
-  _file_init: function(index, cb) {
+  _file_init: function(index) {
     var me = this;
     // 次数 等于 今日次数 递归结束,同时执行回调
     if (index == GAS_Data._numb) {
-      cb && cb();
-      console.log(cb);
+      // cb && cb();
+      console.log('**********本次提交完成******');
       return;
     }
     // 读取文件
@@ -59,7 +59,7 @@ Module.prototype = {
         me._file_done_push(function() {
 
           index++;
-          me._file_init(index, cb);
+          me._file_init(index);
         });
 
 
