@@ -68,7 +68,7 @@ else if (process.env.NODE_ENV == 'git') {
   var _url = path.join(__dirname, './');
 
   var os = require('os');
-  // console.log(os.hostname());
+  console.log(os.hostname());
 
 
 
