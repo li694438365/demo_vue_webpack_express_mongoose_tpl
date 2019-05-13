@@ -2,7 +2,7 @@
 
 ### 1.tpl功能说明
 
-* 前端框架：vue2.0
+* 前端框架： vue2.0
 * 工程化工具：webpack
   * dev模式、build模式；
 * 后台框架：express提供API；
