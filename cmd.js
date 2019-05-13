@@ -71,7 +71,7 @@ else if (process.env.NODE_ENV == 'git') {
 
 
   // 要提交的源的名字
-  var origin = (os.hostname() == "LAPTOP-UJ33NHEM" ? "name" : "name");
+  var origin = (os.hostname() == "LAPTOP-UJ33NHEM" ? "name" : "origin");
 
 
   tool
