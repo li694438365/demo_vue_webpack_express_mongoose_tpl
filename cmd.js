@@ -67,12 +67,12 @@ else if (process.env.NODE_ENV == 'git') {
   // 要提交的目录
   var _url = path.join(__dirname, './');
 
-  var os = require('os');
+  // var os = require('os');
 
 
   // 要提交的源的名字
-  var origin = (os.hostname() == "LAPTOP-UJ33NHEM" ? "name" : "origin");
-
+  var origin = (conf.origin == "name" ? "name" : "origin");
+  // console.log(os.hostname());
 
   tool
   // 导出数据库
