@@ -11,11 +11,11 @@ module.exports = {
   // 获取地址
   data_api: "/api/week/data.do",
 
-  /*是否是 本地测试:
-    是：IP==localhost，上限后需改为false
-    是：git提交 本地为name ，上限后需改为origin 
+  /*是否是 为本地测试，本地测试提交的 origin:
+    本地测试：origin=name;
+    线上测试：origin=origin;
   */
-  loc_dev: true,
+  loc_dev: false,
 
 
 
