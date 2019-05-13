@@ -44,6 +44,30 @@
 
        ![](./src/md_imgs/001.png)
 
+* 2019/5/13：
+
+  1. 把ESC的ids_pub添加到GitHubssh的keys列表；
+
+  2. ESC添加记录GitHub的username和PS：
+
+     1. `git config --global credential.helper store`这一步会在用户目录下的`.gitconfig`文件最后添加：
+
+        ```
+        [credential]
+            helper = store
+        ```
+
+     2. `push`你的代码 (`git push`), 这时会让你输入`用户名`和`密码`, 这一步输入的用户名密码会被`记住`, 下次再push代码时就不用输入用户名密码!这一步会在用户目录下生成文件`.git-credential`记录用户名密码的信息。
+     3. 参考文档：<https://blog.csdn.net/ds19980228/article/details/83720450>
+
+  3. 各种界面化的思考：界面化，代表着JS内部设置的参数需要存在数据库里，那就是简单的实现一个对JS参数的增删改查的小demo；
+
+  4. 各种工具插件的思路：
+
+     1. 本次总得来说是开发的一个GAS项目，前期想着是用一个项目完成所有的工作，后期发现一个项目不现实。具体分析看：<https://github.com/zc3hd/demo_GAS>
+     2. 后来转变为：一个GAS后台提供数据的服务，其他项目参与GAS计划的JS都写在一个文件夹下，该文件夹包含配置项及所有关的核心文件，不影响其他任何文件；
+     3. 从上面的思路上，我也可以把有关通信（IO）、邮件服务（email）等全部转化为功能包的形式，类似插件的形式或者直接生成一个node包（终极目标）；
+
 ### 4.未完成
 
 * 2019/5/3：
