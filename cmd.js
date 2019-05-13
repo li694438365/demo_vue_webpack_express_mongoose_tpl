@@ -79,6 +79,10 @@ else if (process.env.NODE_ENV == 'git') {
     ._cmd(`mongodump -h 127.0.0.1:27017 -d ${conf.db} -o ${_path}`)
     // 
     .then(function() {
+      return tool._cmd(`git pull ${origin} master`);
+    })
+    // 
+    .then(function() {
       return tool._cmd(`git add ${_url}`);
     })
     .then(function() {
