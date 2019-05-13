@@ -3,9 +3,6 @@ module.exports = {
   // 本项目的数据库名称
   db: "seven_review",
 
-  // push 提交的源
-  origin:"name",
-
   // 测试模式下的端口
   dev_port: 1010,
 
