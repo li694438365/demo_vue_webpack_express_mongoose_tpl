@@ -85,7 +85,7 @@ Module.prototype = {
           var data_obj = JSON.parse(data_str);
           // 全局赋值
           GAS_data.week = JSON.parse(data_obj.week);
-          console.log(GAS_data.week);
+          // console.log(GAS_data.week);
 
           opt = null;
 

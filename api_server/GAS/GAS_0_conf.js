@@ -5,20 +5,13 @@ var conf = require('../../conf.js');
 
 module.exports = {
   // ===========================GAS计划
-  // 是否参与
+  // 是否参与GAS计划
   GAS: true,
-
-
-  // IP
-  ip:conf.ip,
 
   // 线上 GAS 项目的端口
   data_port: 8888,
-
   // 获取地址
   data_api: "/api/week/data.do",
-
-
 
 
 
