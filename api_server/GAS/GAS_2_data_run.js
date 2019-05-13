@@ -129,7 +129,11 @@ Module.prototype = {
     var _url = path.join(__dirname, '../../');
 
 
-    var _name = GAS_conf.loc_dev ? 'name' : 'origin';
+    // var _name = GAS_conf.loc_dev ? 'name' : 'origin';
+
+    // 要提交的源的名字
+    var os = require('os');
+    var _name = (os.hostname() == "LAPTOP-UJ33NHEM" ? "name" : "origin");
 
     tool
       ._cmd(`git pull ${_name} master`)

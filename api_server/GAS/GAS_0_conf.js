@@ -1,21 +1,23 @@
 /*
 0.本文件用于 配置 提交文件参数的配置；
 */
+var conf = require('../../conf.js');
 
 module.exports = {
   // ===========================GAS计划
   // 是否参与
   GAS: true,
+
+
+  // IP
+  ip:conf.ip,
+
   // 线上 GAS 项目的端口
   data_port: 8888,
+
   // 获取地址
   data_api: "/api/week/data.do",
 
-  /*是否是 为本地测试，本地测试提交的 origin:
-    本地测试：origin=name;
-    线上测试：origin=origin;
-  */
-  loc_dev: false,
 
 
 
