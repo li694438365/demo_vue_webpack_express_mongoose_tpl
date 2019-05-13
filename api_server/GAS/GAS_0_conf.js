@@ -8,8 +8,7 @@ module.exports = {
   // 是否参与
   GAS: true,
 
-  // 本地请求
-  loc_dev:true,
+
   // IP
   ip:conf.ip,
 

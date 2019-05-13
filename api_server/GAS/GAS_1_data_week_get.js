@@ -57,7 +57,7 @@ Module.prototype = {
 
     // 请求的一些参数
     var opt = {
-      host: (GAS_conf.loc_dev ? 'localhost' : GAS_conf.ip),
+      host: "localhost",
       port: GAS_conf.data_port,
       method: 'POST',
       path: GAS_conf.data_api,
