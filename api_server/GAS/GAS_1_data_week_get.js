@@ -109,8 +109,10 @@ Module.prototype = {
     GAS_data._date = FN.formatterDateDay(new Date(), 1);
     GAS_data.week.forEach(function(ele, index) {
       if (ele.date == GAS_data._date) {
+        // 是否要提交
         GAS_data._github = ele.key;
-        GAS_data._numb = ele.pull_numb;
+        // 当前提交数
+        GAS_data._numb = GAS_conf.pull_numb;
         console.log(GAS_data);
         return;
       }
