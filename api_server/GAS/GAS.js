@@ -17,5 +17,5 @@ new GAS_1_data_week_get()
   .init(function() {
 
     // 第 2 阶段：执行本地数据，修改文件，每修改一次就提交一次数据；
-    // new GAS_2_data_run().init();
+    new GAS_2_data_run().init();
   });
