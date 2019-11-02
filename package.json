@@ -46,7 +46,7 @@
     "body-parser": "^1.14.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
-    "mongoose": "^5.3.13",
+    "mongoose": "^5.7.5",
     "vue": "^2.5.11",
     "vue-router": "^2.5.3",
     "vuex": "^2.3.1"
